@@ -71,3 +71,15 @@ TEST(PrimeTest, SumPrimeZeroOne) {
     EXPECT_EQ(sumPrime(1), 0);
     EXPECT_EQ(sumPrime(2), 0);
 }
+
+TEST(PrimeTest, NPrimeLarge) {
+    EXPECT_EQ(nPrime(10), 29);
+    EXPECT_EQ(nPrime(15), 47);
+    EXPECT_EQ(nPrime(20), 71);
+}
+
+TEST(PrimeTest, SumPrimeNegative) {
+    EXPECT_EQ(sumPrime(-1), 0);
+    EXPECT_EQ(sumPrime(-5), 0);
+    EXPECT_EQ(sumPrime(-10), 0);
+}
